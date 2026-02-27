@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>  Daniq Wood - Sprzedaż Drewna</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f5f3ef;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #5c3d2e, #8b5e3c);
+            color: white;
+            padding: 30px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            color: #5c3d2e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 22px;
+            border-radius: 12px;
+        }
+
+        .logo h1 {
+            font-size: 26px;
+            font-weight: 600;
+        }
+
+        .hero {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .products {
+            padding: 40px 10%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            gap: 30px;
+            padding: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 280px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .product-info h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: 600;
+            color: #8b5e3c;
+            margin-top: 10px;
+        }
+
+        .order {
+            padding: 60px 10%;
+            background-color: #ffffff;
+            margin-top: 40px;
+        }
+
+        .order h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        input, select, textarea {
+            padding: 14px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border: 1px solid #8b5e3c;
+        }
+
+        button {
+            padding: 14px;
+            background-color: #8b5e3c;
+            color: white;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #5c3d2e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #2e1f17;
+            color: white;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 900px) {
+            .product {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .product img {
+                width: 100%;
+                height: 250px;
+            }
+        }
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-container .logo {
+    width: 120px;
+    height: auto;
+}
+
+    </style>
+</head>
+
+
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="Daniq Wood.jpg" class="logo">
+        <h1>Daniq Wood</h1>
+    </div>
+</header>
+
+<section class="hero">
+    <h2>Wysokiej jakości drewno opałowe i kominkowe</h2>
+</section>
+
+<section class="products">
+
+    <div class="product">
+    <img src="https://st4.depositphotos.com/7786066/29987/i/600/depositphotos_299871914-stock-photo-folded-firewood-close-up.jpg">
+    <div class="product-info">
+        <h3>Drewno Dębowe</h3>
+        <p>Bardzo trwałe i twarde. Idealne do kominka.</p>
+        <div class="price">~ 320 zł / mp (łupane) </div>
+ <div class="price">~ 250 zł / mp (wałki) </div>   </div>
+</div>
+
+    <div class="product">
+    <img src="https://img.redro.pl/plakaty/sciete-drzewa-na-kupie-400-216888811.jpg">
+    <div class="product-info">
+        <h3>Drewno Sosnowe</h3>
+        <p>Łatwe w rozpalaniu, popularne drewno opałowe.</p>
+        <div class="price">~ 260 zł / mp (łupane) </div>
+ <div class="price">~ 200 zł / mp (wałki) </div>   </div>   </div>
+</div>
+
+    <div class="product">
+    <img src="https://ireland.apollo.olxcdn.com/v1/files/jh3hm7xq5g912-PL/image" alt="Przekrój drewna bukowego">
+    <div class="product-info">
+        <h3>Drewno Bukowe</h3>
+        <p>Wysoka kaloryczność — świetne drewno kominkowe.</p>
+        <div class="price">~ 320 zł / mp (łupane) </div>
+ <div class="price">~ 250 zł / mp (wałki) </div> 
+    </div>
+</div>
+	
+<div class="product">
+    <img src="https://ireland.apollo.olxcdn.com/v1/files/gmbyzejmdj8k2-PL/image" alt="Przekrój drewna jesionowego">
+    <div class="product-info">
+        <h3>Drewno Jesionowe</h3>
+        <p>Trwałe drewno jesionowe — doskonałe do kominka lub jako opał o wysokiej kaloryczności.</p>
+        <div class="price">~ 310 zł / mp (łupane)</div>
+        <div class="price">~ 240 zł / mp (wałki)</div>
+    </div>
+</div>
+
+<div class="product">
+    <img src="https://as1.ftcdn.net/v2/jpg/01/36/55/20/500_F_136552028_W2KFjJ99AFTa5VQnxsNu6kSDsjUTSSIo.jpg" alt="Przekrój drewna brzozowego">
+    <div class="product-info">
+        <h3>Drewno Brzozowe</h3>
+        <p>Drewno brzozowe — łatwo się rozpala i daje przyjemne, jasne płomienie.</p>
+        <div class="price">~ 300 zł / mp (łupane)</div>
+        <div class="price">~ 250 zł / mp (wałki)</div>
+    </div>
+</div>
+
+<div class="product">
+    <img src="https://cdn.arena.pl/f9d02e5fe9fd7ce48bf084f039561670-product_large.jpg" alt="Przekrój drewna olchowego">
+    <div class="product-info">
+        <h3>Drewno Olchowe</h3>
+        <p>Drewno olchowe — miękkie i łatwe do rozpalania, doskonałe do kominka.</p>
+        <div class="price">~ 300 zł / mp (łupane)</div>
+        <div class="price">~ 250 zł / mp (wałki)</div>
+    </div>
+</div>
+
+<div class="product">
+    <img src="https://tappy.pl/wp-content/uploads/2021/11/AdobeStock_318728564-Kopiowanie.jpeg" alt="Przekrój drewna świerkowego">
+    <div class="product-info">
+        <h3>Drewno Świerkowe</h3>
+        <p>Drewno świerkowe — lekkie i łatwe w użyciu, doskonałe jako opał.</p>
+        <div class="price">~ 260 zł / mp (łupane)</div>
+        <div class="price">~ 200 zł / mp (wałki)</div>
+    </div>
+</div>
+
+<div class="product">
+    <img src="https://media.istockphoto.com/id/1053210362/photo/poplar-wood-logs-background.jpg?b=1&s=612x612&w=0&k=20&c=XiEQQGncJlgwOI5o84uWH2C3BcqklNy6pCb3UcwvlUM=" alt="Przekrój drewna topolowego">
+    <div class="product-info">
+        <h3>Drewno Topolowe</h3>
+        <p>Drewno topolowe — miękkie, lekkie i łatwe do rozpalania.</p>
+        <div class="price">~ 190 zł / mp (łupane)</div>
+        <div class="price">~ 150 zł / mp (wałki)</div>
+    </div>
+</div>
+
+<section class="🔥 Forma przygotowania drewna" style="padding:60px 10%; text-align:center; background:#fff; margin-top:40px;">
+
+<h2 style="font-size:28px; margin-bottom:25px;">🔥 Forma przygotowania drewna</h2>
+
+<p style="max-width:700px; margin:auto; font-size:18px; color:#555; line-height:1.6;">
+Istnieje możliwość zakupu drewna w wałkach lub w wersji połupanej.
+
+</section>
+
+
+<section class="transport" style="padding:60px 10%; text-align:center; background:#fff; margin-top:40px;">
+
+<h2 style="font-size:28px; margin-bottom:25px;">🚚 Transport Drewna</h2>
+
+<p style="max-width:700px; margin:auto; font-size:18px; color:#555; line-height:1.6;">
+Oferujemy transport zamówionego drewna.
+
+<p style="max-width:700px; margin:auto; font-size:18px; color:#555; line-height:1.6;">
+Cena transportu ustalana indywidualnie.
+
+</section>
+
+<section class="order">
+    <h2>Złóż Zamówienie</h2>
+
+ <form action="https://formspree.io/f/mvzbdeqw" method="POST">
+
+<input type="hidden" name="product_name" id="product_name">
+<input type="hidden" name="total_price" id="total_price">
+
+<input type="text" name="name" placeholder="Imię" required>
+
+<input type="email" name="email" placeholder="Adres e-mail" required>
+
+<input type="tel" name="phone" placeholder="Numer telefonu" required>
+
+<select id="product" name="product">
+    <option value="0">Wybierz produkt</option>
+    <option value="320">Drewno Dębowe połupane</option>
+    <option value="260">Drewno Sosnowe połupane</option>
+    <option value="320">Drewno Bukowe połupane</option>
+    <option value="310">Drewno Jesionowe połupane</option>
+    <option value="300">Drewno Brzozowe połupane</option>
+    <option value="300">Drewno Olchowe połupane</option>
+    <option value="260">Drewno Świerkowe połupane</option>
+    <option value="190">Drewno Topolowe połupane</option>
+   
+ <option value="250">Drewno Dębowe - wałki</option>
+    <option value="200">Drewno Sosnowe - wałki</option>
+    <option value="250">Drewno Bukowe - wałki</option>
+    <option value="240">Drewno Jesionowe - wałki</option>
+    <option value="250">Drewno Brzozowe - wałki</option>
+    <option value="250">Drewno Olchowe - wałki</option>
+    <option value="200">Drewno Świerkowe - wałki</option>
+    <option value="150">Drewno Topolowe - wałki</option>
+
+</select>
+
+<input type="number" id="quantity" name="quantity" placeholder="Ilość (mp)">
+
+<textarea name="message" placeholder="Adres dostawy / dodatkowe informacje"></textarea>
+
+<p>💰 Cena całkowita: <span id="totalPrice">0</span> zł (bez transportu) </p>
+
+<button type="submit">Wyślij zamówienie</button>
+
+</form>
+</section>
+
+<footer>
+    <p>© 2026 Daniq Wood</p>
+
+    <p>
+        📧 <a href="mailto:daniq11.dr@gmail.com" class="footer-link">
+            daniq11.dr@gmail.com
+        </a>
+        |
+        📞 <a href="tel:+48504386093" class="footer-link">
+            504 386 093
+        </a>
+    </p>
+
+   
+    </a>
+</footer>
+
+<script>
+window.onload = function() {
+
+let product = document.getElementById("product");
+let quantity = document.getElementById("quantity");
+let totalPrice = document.getElementById("totalPrice");
+
+let productName = document.getElementById("product_name");
+let totalPriceInput = document.getElementById("total_price");
+
+function calculatePrice() {
+
+    let price = parseFloat(product.value);
+    let qty = parseFloat(quantity.value);
+
+    if (isNaN(price) || isNaN(qty)) return;
+
+    let total = price * qty;
+
+    totalPrice.innerText = total.toFixed(2);
+
+    productName.value = product.options[product.selectedIndex].text;
+    totalPriceInput.value = total.toFixed(2);
+}
+
+product.onchange = calculatePrice;
+quantity.oninput = calculatePrice;
+
+};
+</script>
+
+</body>
+</html>
